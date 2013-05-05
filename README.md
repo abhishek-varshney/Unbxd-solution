@@ -44,7 +44,3 @@ Note
 ====
 list1 -> the product details
 list2 -> the search query details
-
-The sample data is generated using
-
-http://www.fakenamegenerator.com/order.php
