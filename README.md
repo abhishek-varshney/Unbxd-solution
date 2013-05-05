@@ -38,7 +38,7 @@ The run bash script is included in the repos. There can be better solutions to t
 The usage
 =========
 
-python extract.py <path of file 1> <path of file 2> <1/2 (based on desired use case)> <Query/Artist>
+python extract.py <<path of file 1>> <path of file 2> <1/2 (based on desired use case)> <Query/Artist>
 
 Note
 ====
