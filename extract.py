@@ -1,7 +1,7 @@
 import sys
 import csv
 def load(path):
-  ret=[]
+  	ret=[]
 	with open(path, 'rb') as csvfile:
 		spamreader = csv.reader(csvfile, delimiter=',')
 		for row in spamreader:
