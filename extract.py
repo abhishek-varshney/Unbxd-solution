@@ -8,10 +8,10 @@ if __name__ == '__main__':
     sys.exit(1)
   use_case="query" if int(sys.argv[3])==1 else "artist"  
   if sys.argv[3]=="1":
-    l2 = simplejson.loads(open(sys.argv[2]).read())
-  	filter_out=filter(lambda x:x[use_case]==sys.argv[4],l2)
-  	del l2
-  	l1 = simplejson.loads(open(sys.argv[1]).read())
+     l2 = simplejson.loads(open(sys.argv[2]).read())
+  	 filter_out=filter(lambda x:x[use_case]==sys.argv[4],l2)
+  	 del l2
+  	 l1 = simplejson.loads(open(sys.argv[1]).read())
   if sys.argv[3]=="2":
   	l1 = simplejson.loads(open(sys.argv[1]).read())
   	filter_out=filter(lambda x:x[use_case]==sys.argv[4],l1)
