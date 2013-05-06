@@ -37,7 +37,7 @@ The run bash script is included in the repos. There can be better solutions to t
 The usage
 =========
 
-python extract.py <path of data.json> <path of query.json> <1/2 (query/artist)(based on desired use case)> <Query/Artist>
+python extract.py [path of data.json] [path of query.json] [1/2 (query/artist)(based on desired use case)] [Query/Artist]
 
 Note
 ====
