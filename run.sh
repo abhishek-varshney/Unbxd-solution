@@ -1,4 +1,5 @@
 #!/bin/bash
+# This is a sample run file
 # The script take a search query 'Less Than Jake' and prints all products related to the product id in search query. 3rd argument (1 here) indicates that it is search based on search query
 echo "Getting desired results for search query 'Less Than Jake'"
 echo ""
