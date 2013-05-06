@@ -39,8 +39,8 @@ The usage
 
 python extract.py [path of data.json] [path of query.json] [1/2 (query/artist)(based on desired use case)] [Query/Artist]
 
-Note
-====
+Note - Ignore if you are not from Unbxd Team
+============================================
 
 There is format error in the query.json provided. There are occurances of double comma like
 
