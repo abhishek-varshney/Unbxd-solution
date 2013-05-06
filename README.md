@@ -49,5 +49,6 @@ There is format error in the query.json provided. There are occurances of double
 This double-comma is 130405'th character. There are many occurances of smilar type. I formatted it through:
 
 tr -s ',' < query.json > query.json.mod
+
 mv query.json.mod query.json
 
