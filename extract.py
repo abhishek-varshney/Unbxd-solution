@@ -13,14 +13,14 @@ if __name__ == '__main__':
     del l2
     l1 = simplejson.loads(open(sys.argv[1]).read())
   if sys.argv[3]=="2":
-  	l1 = simplejson.loads(open(sys.argv[1]).read())
-  	filter_out=filter(lambda x:x[use_case]==sys.argv[4],l1)
-  	del l1
-  	l2 = simplejson.loads(open(sys.argv[2]).read())
+    l1 = simplejson.loads(open(sys.argv[1]).read())
+    filter_out=filter(lambda x:x[use_case]==sys.argv[4],l1)
+    del l1
+    l2 = simplejson.loads(open(sys.argv[2]).read())
   for row in filter_out: 
-  	if sys.argv[3]=="1":
-  		result_set=filter(lambda x: 1 if x["productId"]==row["productId"] else 0,l1)
-  	if sys.argv[3]=="2":
-  		result_set=filter(lambda x: 1 if x["productId"]==row["productId"] else 0,l2)
-  	for row in result_set:
-  		pprint(row)
+    if sys.argv[3]=="1":
+      result_set=filter(lambda x: 1 if x["productId"]==row["productId"] else 0,l1)
+    if sys.argv[3]=="2":
+      result_set=filter(lambda x: 1 if x["productId"]==row["productId"] else 0,l2)
+    for row in result_set:
+      pprint(row)
