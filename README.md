@@ -44,11 +44,11 @@ A sample run for both the use cases is given in run.sh file. Don't forget to chm
 Note - Ignore if you are not from Unbxd Team
 ============================================
 
-There is format error in the query.json provided. There are occurances of double comma like
+There is format error in the query.json provided. There are occurences of double comma like
 
 {"query": "Lock and", "timestamp": "2012-12-28T00:00:00.045000+00:00", "productId": 322506},,{"query": "Velvet Crush", "timestamp": "2012-12-28T00:00:00.045000+00:00", "productId": 134363}
 
-This double-comma is 130405'th character. There are many occurances of smilar type. I formatted it through:
+This double-comma is 130405'th character. There are many occurences of similar type. I formatted it through:
 
 tr -s ',' < query.json > query.json.mod
 
