@@ -1,15 +1,14 @@
 import sys
-import csv
-#import json
 import simplejson
 from pprint import pprint
+
 if __name__ == '__main__':
   if (len(sys.argv) != 5):
-    print "usage : python extract.py [path to list 1] [path to list 2] [1/2 (Use case)] [Search query/Artist]"
+    print "usage : python extract.py [path to data.json] [path to query.json] [1/2 (Use case)] [Search query/Artist]"
     sys.exit(1)
   use_case="query" if int(sys.argv[3])==1 else "artist"  
   if sys.argv[3]=="1":
-  	l2 = simplejson.loads(open(sys.argv[2]).read())
+    l2 = simplejson.loads(open(sys.argv[2]).read())
   	filter_out=filter(lambda x:x[use_case]==sys.argv[4],l2)
   	del l2
   	l1 = simplejson.loads(open(sys.argv[1]).read())
