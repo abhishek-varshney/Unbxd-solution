@@ -31,7 +31,7 @@ You need to design a system which can hold the above mentioned data using data s
 The solution
 ============
 
-The problem is solved using map-filter-reduce paradigm in python. Although, the actual implementation did not require more than just a couple of filters. The data structure chosen here to store the contents of both the files is list. Dictionary could have been better (??). One json file is loaded at a time in memory (based on the use-case), its filtered based on the search parameter, the filtered contents stored in a separate list and the original list is freed. The second json file is loaded thereafter. This is so as to minimize the memory utilization and not to go out of memory!
+The problem is solved using map-filter-reduce paradigm in python. Although, the actual implementation did not require more than just a couple of filters. The data structure chosen here to store the contents of both the files is list. Dictionary could have been better (??). One json file is loaded at a time in memory (based on the use-case), its filtered based on the search parameter, the filtered contents stored in a separate list and the original list is freed. The second json file is loaded thereafter. This is done so as to minimize the memory utilization and not to go out of memory!
 The run bash script is included in the repos. There can be better solutions to the problem indeed !
 
 The usage
